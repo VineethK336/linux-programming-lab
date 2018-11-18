@@ -7,3 +7,4 @@ echo -n "Number of lines, words and characters in $filename are: "  # -n option 
 wc $filename | tr -s [:blank:] | cut -d " " -f 2-4
 
 # tr -s [:blank:] squeezes multiple occurances of whitespace characters into one occurance.
+# Using space as delimiter, the cut command breaks the input into fields and prints the fields from 2 to 4
