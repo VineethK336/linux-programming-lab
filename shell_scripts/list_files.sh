@@ -1,9 +1,11 @@
-# Shell script to list all files in the current directory for which the user
-# has read, write and execute permissions
-ls -l . | grep ^-rwx | tr -s [:blank:] | cut -d " " -f 9
+# Shell script to list all the directory files in a directory
 
-# What did we do?
-# 1. List all the files in the current diretory in long form
-# 2. Match the 'files' with 'rwx' permissions
-# 3. Squeeze multiple spaces into single space (for cut)
-# 4. Cut with space as delimiter and get the 9th field (name of the file)
+echo "The directories in the working directory are: "
+ls -l . | grep ^d | tr -s [:space:] | cut -d " " -f 9
+
+
+# 1. ls -l . lists all files in the current directory in long form
+# 2. grep ^d matches all the lines starting with 'd' i.e., the directory files
+# 3. tr -s [:space:] squeezes multiple occurances of whitespaces into single
+# occurance. This is to sanitize the input given to cut.
+# 4. cut -d " " -f 9 cuts the input with " " as delimiter and gets the 9th field

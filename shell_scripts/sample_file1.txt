@@ -1,0 +1,6 @@
+Hello! This is vineeth! This
+is a sample file that I am placing in this directory
+so that you can play with some programs
+without having to think about
+writing some file like this.
+Have fun!

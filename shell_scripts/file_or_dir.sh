@@ -1,6 +1,7 @@
 # Shell program that tells whether supplied name is file or directory.
 # If it's a file, then the number of lines in it will be displayed.
 
+echo -e "Enter input as 'exit' to exit.\n"
 while [ 0 ]
 do
   echo "Enter name: "
@@ -21,5 +22,7 @@ do
 done
 
 
-# On line 16, wc with -l gives line count and file name. So, we use tr to squeeze
-# multiple whitespaces into single whitespace and get only line count using cut.
+# 1. If the input is a file, wc with -l gives line count and file name.
+# 2. So, we use tr to squeeze multiple whitespaces into single whitespace and
+#    get only line count using cut.
+# 3. tr is being used to sanitize the input given to cut.

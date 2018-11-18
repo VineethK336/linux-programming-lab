@@ -1,0 +1,4 @@
+This is the second sample file that vineeth is writing.
+Okay, this file just contains some placeholder text
+so that you can experiment with linux programs in this repo.
+Don't forget to have fun!

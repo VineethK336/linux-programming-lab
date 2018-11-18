@@ -1,0 +1,5 @@
+This is the third file that I am writing
+so that you can pass this as an argument to
+some program without having to create a
+text file or some other file with stuff like this.
+Have fun!
