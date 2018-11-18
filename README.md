@@ -20,3 +20,6 @@ By default, space is the field separator.
 ### Note:
 1. Sample text files and directories are included so that you can play with the scripts.
 2. Until and unless specified in a program's documentation, the execution method for different programs is as mentioned above.
+
+Finally, a great thanks to the awesome man pages, pubs.opengroup.org and the
+legendary devs who posted questions and answers on Stack Overflow!
